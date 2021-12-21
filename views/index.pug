@@ -1,0 +1,15 @@
+extends layout
+include section-card
+
+block content 
+    h2(class='text-white text-4xl text-center pb-6') I make things.
+    //- I really need to rework this intro...
+    p(class='text-white text-center px-2 sm:px-32')
+        | Data dashboards. IoT devices. Instrumentation. Halloween decorations. I am constantly driven to create, analyse, and improve.
+        | I take pride in being able to produce a functional product, regardless of whether it’s made of code, circuitry, or plastic.
+    div(class='flex flex-wrap justify-center p-4')
+        +section-card('https://picsum.photos/200/300?seed=1', 'Web Development', '/web')
+        +section-card('https://picsum.photos/200/300?seed=2', 'Embedded Development', '/embedded')
+        +section-card('https://picsum.photos/200/300?seed=4', 'Desktop Development', '/desktop')
+        +section-card('https://picsum.photos/200/300?seed=5', 'PCB Design', '/pcb')
+        +section-card('https://picsum.photos/200/300?seed=6', '3D Printing & CNC', '/printing')
