@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-transition-slide {
+    transition: opacity .075s, transform 0.1s;
+    opacity: 1;
+}
+
+.is-animating .page-transition-slide {
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+}
+
+.is-animating.is-leaving .page-transition-slide {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+}
+
+.is-animating.to-homepage .page-transition-slide {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+}
+
+.is-animating.is-leaving.to-homepage .page-transition-slide {
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+}

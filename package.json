@@ -15,5 +15,8 @@
     "@11ty/eleventy": "^0.12.1",
     "parallelshell": "^3.0.1",
     "tailwindcss": "^3.0.7"
+  },
+  "dependencies": {
+    "swup": "^2.0.14"
   }
 }

@@ -6,4 +6,7 @@ html
         link(rel="stylesheet", href="/style.css")
         div(class='absolute min-h-screen inset-x-0 bg-gradient-to-bl from-purple-900 to-gray-900')
             include title
-            block content
+            div(id='swup' class='page-transition-slide')
+                block content
+        script(src="/js/swup.js") 
+        script(src="/js/main.js") 
