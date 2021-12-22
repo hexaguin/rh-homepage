@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    div(class='px-2 sm:px-32 xl:px-48 text-center')
+        div
+            a(href="/" class='text-purple-200 font-size-2') 🡸 Back
+            h2(class='text-white text-4xl pb-8')
+                block page-name
+                    | This Page
+        div(class='text-white')
+            block page-content
+                | Page content
