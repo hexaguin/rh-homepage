@@ -5,11 +5,27 @@ include common/styled-links
 block page-name 
     | Web Development
 
-block page-content 
-    p Words about web stuff
+block page-content
+    //- TODO better intro
+    p Dashboards. GIS tools. Static sites. I build web content that comes in all shapes and sizes.
     div(class='flex flex-wrap justify-center p-4')
-        +card-project('Omnimap', '/res/thumb_pcb.png')
+        +card-project('Omnimap', '/res/thumb_omnimap.png')
             p A unified map of Calgary's road conditions, Plus 15 network, events, and more.
-            +link-external('https://python.raelynn.hattie.codes/omnimap')
-                | Live Site 
-        +card-project('This Site', '/res/thumb_cnc.png')
+            +link-icon('https://python.raelynn.hattie.codes/omnimap', 'fas fa-map')
+                | Live Site
+            br
+            +link-icon('https://github.com/hexaguin/calgary-omnimap', 'fab fa-github')
+                | Github Repo
+        +card-project('This Site', '/res/thumb_web.png')
+            p
+                | This site is made using 
+                +link-inline('https://pugjs.org/', 'Pug')
+                |  and 
+                +link-inline('https://tailwindcss.com/', 'Tailwind')
+                |. For more information, see the full blog post.
+            //- TODO add repo or remove
+            +link-icon('https://github.com/hexaguin/', 'fas fa-newspaper')
+                | Blog Post
+            br
+            +link-icon('https://github.com/hexaguin/', 'fab fa-github')
+                | Github Repo
