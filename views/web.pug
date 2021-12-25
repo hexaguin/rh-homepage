@@ -1,7 +1,15 @@
 extends common/content-page
+include common/card-project
+include common/styled-links
 
 block page-name 
     | Web Development
 
 block page-content 
     p Words about web stuff
+    div(class='flex flex-wrap justify-center p-4')
+        +card-project('Omnimap', '/res/thumb_pcb.png')
+            p A unified map of Calgary's road conditions, Plus 15 network, events, and more.
+            +link-external('https://python.raelynn.hattie.codes/omnimap')
+                | Live Site 
+        +card-project('This Site', '/res/thumb_cnc.png')
