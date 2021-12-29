@@ -23,6 +23,7 @@ module.exports = function(eleventyConfig) {
     return {
       dir: {
         input: "views",
+        includes: "common",
         output: "dist"
       },
     }
