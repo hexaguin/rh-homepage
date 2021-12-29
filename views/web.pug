@@ -9,13 +9,16 @@ block page-content
     //- TODO better intro
     p Dashboards. GIS tools. Static sites. I build web content that comes in all shapes and sizes.
     div(class='flex flex-wrap justify-center p-4')
+        //- Card: Omnimap
         +card-project('Omnimap', '/res/thumb_omnimap.png')
             p A unified map of Calgary's road conditions, Plus 15 network, events, and more.
+            .grow
             +link-icon('https://python.raelynn.hattie.codes/omnimap', 'fas fa-map')
                 | Live Site
             br
             +link-icon('https://github.com/hexaguin/calgary-omnimap', 'fab fa-github')
                 | Github Repo
+        //- Card: This Site
         +card-project('This Site', '/res/thumb_web.png')
             p
                 | This site is made using 
@@ -23,7 +26,8 @@ block page-content
                 |  and 
                 +link-inline('https://tailwindcss.com/', 'Tailwind')
                 |. For more information, see the full blog post.
-            //- TODO add repo or remove
+            .grow
+            //- TODO add repo
             +link-icon('https://github.com/hexaguin/', 'fas fa-newspaper')
                 | Blog Post
             br
