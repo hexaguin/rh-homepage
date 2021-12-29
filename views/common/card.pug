@@ -1,3 +1,7 @@
+//- Generic card mixin used site-wide.
+//- Attributes: 
+//-   shape: classes to use to define the shape of the card. Can also be used for arbitrary class additions (but shouldn't).
+//- Block: content of the card.
 mixin card(shape="w-48 h-48 lg:w-64 lg:h-64 rounded-lg", hover=false)
     //- Hack to fix a weird bug in Pug I think - mixin defaults are being derpy, TODO investigate
     -shape = attributes.shape || shape

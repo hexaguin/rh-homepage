@@ -1,8 +1,10 @@
+//- Simple styled inline link which opens in a new tab.
 mixin link-inline(href, text)
     a(href=href class="text-purple-400 hover:text-orange-500 transition-colors underline" target="_blank")
         =text
         block
 
+//- Styled inline link with an FA icon which opens in a new tab.
 mixin link-icon(href, icon)
     a(href=href class="text-purple-400 hover:text-orange-500 transition-colors underline" target="_blank")
         i(class=icon + " text-s pl-1 pr-0.5")

@@ -1,5 +1,10 @@
 include card
 
+//- Card mixin used on project pages.
+//- Attributes: 
+//-   name: Name of the project. Used as a title under the image.
+//-   imgsrc: image URL to use for the top of the card.
+//- Block: body of the card, generally text and links (see styled-links).
 mixin card-project(name, imgsrc)
     +card(shape="w-72 h-[28rem] sm:w-80 rounded-lg", hover=false)
         div(class="rounded-lg overflow-clip")

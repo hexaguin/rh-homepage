@@ -1,3 +1,5 @@
+//- Main template for the whole site - handles all boilerplate and global tags.
+
 doctype html
 html(lang="en")
     head
@@ -6,7 +8,7 @@ html(lang="en")
         link(rel="icon", href="/res/logo.svg")
         link(rel="stylesheet", href="/style.css")
     body
-        <script src="https://kit.fontawesome.com/d7064070d4.js" crossorigin="anonymous"></script>
+        script(src="https://kit.fontawesome.com/d7064070d4.js" crossorigin="anonymous")
         div(class="absolute min-h-screen inset-x-0 bg-gradient-to-bl from-purple-900 to-gray-900")
             include title
             div(id="swup" class="page-transition-slide")

@@ -2,6 +2,8 @@ extends layout
 include card-project
 include styled-links
 
+//- Main template for "content" pages - pages pertaining to specific topics.
+
 block content
     div(class="px-2 sm:px-32 xl:px-48 text-center")
         div
@@ -9,10 +11,14 @@ block content
                 i(class="fas fa-arrow-left")
                 span  Back
             h2(class="text-white text-4xl pt-4 pb-8")
+                //- Page name, used for the header.
                 block page-name
                     | This Page
         div(class="text-white")
+            //- Main body
             block page-content
+                //- "Intro" text - generally a p tag with some short writing.
                 block intro
                 div(class="flex flex-wrap justify-center p-4")
+                    //- Cards for specific projects - see card-project.
                     block cards

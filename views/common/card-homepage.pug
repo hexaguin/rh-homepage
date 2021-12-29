@@ -1,5 +1,10 @@
 include card
 
+//- Card mixin used on the homepage.
+//- Attributes: 
+//-   imgsrc: URL for the image used at the top of the card.
+//-   text: text to populate the card with
+//-   link: URL to link to
 mixin card-homepage(imgsrc, text, link)
     a(href=link)
         +card(shape="w-48 h-48 lg:w-64 lg:h-64 rounded-lg", hover=true)
