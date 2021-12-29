@@ -7,9 +7,11 @@ include styled-links
 block content
     div(class="px-2 sm:px-32 xl:px-48 text-center")
         div
-            a(href="/" class="text-purple-200 font-size-2")
-                i(class="fas fa-arrow-left")
-                span  Back
+            div(class="flex flex-row w-full justify-center")
+                a(href="/" class="text-purple-200 font-size-2")
+                    +card(shape="w-24 h-10 rounded-lg", hover=true)
+                        i(class="fas fa-arrow-left")
+                        span  Back
             h2(class="text-white text-4xl pt-4 pb-8")
                 //- Page name, used for the header.
                 block page-name
