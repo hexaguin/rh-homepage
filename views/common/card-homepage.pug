@@ -4,6 +4,6 @@ mixin card-homepage(imgsrc, text, link)
     a(href=link)
         +card(shape='w-48 h-48 lg:w-64 lg:h-64 rounded-lg', hover=true)
             div(class='rounded-lg overflow-clip')
-                img(src=imgsrc class='w-full h-32 lg:h-48 object-cover')
+                img(src=imgsrc class='w-full h-32 lg:h-48 object-cover' alt='')
             div(class="text-white text-center pt-4")
                 =text
