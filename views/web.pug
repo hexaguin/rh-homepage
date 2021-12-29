@@ -17,6 +17,9 @@ block cards
         +link-icon('https://python.raelynn.hattie.codes/omnimap', 'fas fa-map')
             | Live Site
         br
+        +link-icon('https://raelynn.hattie.codes/2019/03/22/omnimap-the-unified-map-for-calgarians-on-the-go/', 'fas fa-newspaper')
+            | Blog Post
+        br
         +link-icon('https://github.com/hexaguin/calgary-omnimap', 'fab fa-github')
             | Github Repo
     //- Card: This Site
@@ -28,9 +31,18 @@ block cards
             +link-inline('https://tailwindcss.com/', 'Tailwind')
             |. For more information, see the full blog post.
         .grow
-        //- TODO add repo
-        +link-icon('https://github.com/hexaguin/', 'fas fa-newspaper')
+        //- TODO add repo and blog post
+        +link-icon('https://raelynn.hattie.codes', 'fas fa-newspaper')
             | Blog Post
         br
         +link-icon('https://github.com/hexaguin/', 'fab fa-github')
             | Github Repo
+    //- Card: DSO203
+    +card-project('DSO203 Converter', '/res/thumb_dso.png')
+        p A simple online tool for converting the slightly wonky CSV files from the DSO203 oscilloscope for use in sigroc.
+        .grow
+        +link-icon('https://python.raelynn.hattie.codes/dso-csv', 'fas fa-external-link-alt')
+            | Live Page
+        +link-icon('https://raelynn.hattie.codes/2019/02/20/converting-buffer-dumps-from-the-dso203-for-use-in-sigrok-pulseview/', 'fas fa-newspaper')
+            | Blog Post
+        
