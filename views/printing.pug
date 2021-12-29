@@ -1,0 +1,25 @@
+extends common/content-page
+
+block page-name 
+    | 3D Printing & CNC
+
+block intro 
+    //- TODO: better intro
+    p I turn photopolymers and aluminum plates alike into functional prototypes. FDM, SLA, and 3-axis machining are all specialties of mine.
+
+block cards
+    +card-project('THRmAL', '/res/thumb_thrmal.png')
+        p A handheld thermal viewer with a custom PCB, a friction-fit outer shell, and more lasers than you can shake a stick at (assuming said stick can only be shaken at less than four lasers).
+        .grow
+        +link-icon('https://raelynn.hattie.codes/2019/03/22/omnimap-the-unified-map-for-calgarians-on-the-go/', 'fas fa-newspaper')
+            | Blog Post
+    +card-project('ESP8266 Weather Station', '/res/thumb_weather_station.jpg')
+        p A low-cost DIY weather station that can actually survive in Canada.
+        .grow
+        +link-icon('https://ryan.hattie.codes/2019/01/28/year-round-weather-station/', 'fas fa-newspaper')
+            | Blog Post
+    +card-project('Thingiverse', '/res/thumb_thingiverse.jpg')
+        p More assorted models and small projects can be found on my Thingiverse page.
+        .grow
+        +link-icon('https://www.thingiverse.com/rhattie/designs', 'fas fa-external-link-alt')
+            | Thingiverse
