@@ -4,6 +4,24 @@ block page-name
     | Embedded Development
 
 block intro 
-    p Words about embedded stuff
+    //- TODO: better intro
+    p What good is a microcontroller without firmware to run?
 
 block cards
+    +card-project('THRmAL', '/res/thumb_thrmal.png')
+        p A handheld thermal viewer with a custom PCB, a friction-fit outer shell, and more lasers than you can shake a stick at (assuming said stick can only be shaken at less than four lasers).
+        .grow
+        +link-icon('https://raelynn.hattie.codes/2019/03/22/omnimap-the-unified-map-for-calgarians-on-the-go/', 'fas fa-newspaper')
+            | Blog Post
+    +card-project('SSD1327 Arduino Library', '/res/thumb_ssd1327.png')
+        p A handheld thermal viewer with a custom PCB, a friction-fit outer shell, and more lasers than you can shake a stick at (assuming said stick can only be shaken at less than four lasers).
+        .grow
+        +link-icon('https://raelynn.hattie.codes/2019/02/02/displaying-live-weather-data-with-my-low-level-ssd1327-library/', 'fas fa-newspaper')
+            | Blog Post
+        +link-icon('https://github.com/hexaguin/SSD1327', 'fab fa-github')
+            | Github Repo
+    +card-project('ESP8266 Weather Station', '/res/thumb_weather_station.jpg')
+        p A low-cost DIY weather station that can actually survive in Canada.
+        .grow
+        +link-icon('https://ryan.hattie.codes/2019/01/28/year-round-weather-station/', 'fas fa-newspaper')
+            | Blog Post
