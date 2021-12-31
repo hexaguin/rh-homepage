@@ -5,7 +5,8 @@
 mixin card(shape="w-48 h-48 lg:w-64 lg:h-64 rounded-lg", hover=false)
     //- Hack to fix a weird bug in Pug I think - mixin defaults are being derpy, TODO investigate
     -shape = attributes.shape || shape
-    div(class="group bg-gradient-to-bl from-purple-600 to-grey-900 shadow-xl m-4 z-0 " + shape)
+    -group = attributes.hover ? " group" : ""
+    div(class="bg-gradient-to-bl from-purple-600 to-grey-900 shadow-xl m-4 z-0 " + shape + group)
         if attributes.hover
             div(class="transition-opacity opacity-0 group-hover:opacity-100 bg-gradient-to-bl from-orange-500 to-purple-900 via-purple-500 absolute z-10 " + shape)
         div(class="p-2 z-20 relative")
