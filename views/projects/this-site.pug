@@ -1,0 +1,18 @@
+include ../common/card-project
+include ../common/styled-links
+
++card-project("This Site", "/res/thumb_web.png")
+    p
+        | This site is made using 
+        +link-inline("https://pugjs.org/", "Pug")
+        |  and 
+        +link-inline("https://tailwindcss.com/", "Tailwind")
+        |. For more information, see the full blog post.
+    .grow
+    +project-buttons()
+        +button("https://raelynn.hattie.codes/blog")
+            i(class="fas fa-newspaper")
+            span  Article
+        +button("https://github.com/hexaguin/rh-homepage/")
+            i(class="fab fa-github")
+            span  Github
