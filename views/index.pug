@@ -1,15 +1,20 @@
 extends common/layout
 include common/card-homepage
 include common/styled-links
+include common/button
 
 block content 
     h2(class="text-white text-4xl text-center pb-6") I make things.
     p(class="text-white text-center px-2 sm:px-32 xl:px-48")
         | Data dashboards. IoT devices. Instrumentation. Halloween decorations. My passion is creation, whether my tools are made of code or carbide.
         br
-        +link-inline("https://raelynn.hattie.codes", "Blog")
-        |  | 
-        +link-inline("mailto:inquiries-for-raelynn@hattie.email", "Email") 
+    div(class="flex flex-row w-full justify-center")
+        +button("mailto:inquiries-for-raelynn@hattie.email")
+            i(class="fas fa-envelope")
+            span  Email
+        +button("https://raelynn.hattie.codes")
+            i(class="fas fa-newspaper")
+            span  Blog
     div(class="flex flex-wrap justify-center p-4")
         +card-homepage("/res/thumb_web.png", "Web Development", "/web")
         +card-homepage("/res/thumb_embedded.png", "Embedded Firmware", "/embedded")
