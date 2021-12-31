@@ -1,6 +1,7 @@
 extends layout
 include card-project
 include styled-links
+include button
 
 //- Main template for "content" pages - pages pertaining to specific topics.
 
@@ -8,7 +9,9 @@ block content
     div(class="px-2 sm:px-32 xl:px-48 text-center")
         div
             div(class="flex flex-row w-full justify-center")
-                include button-back
+                +button("/")
+                    i(class="fas fa-arrow-left")
+                    span  Back
             h2(class="text-white text-4xl pt-4 pb-8")
                 //- Page name, used for the header.
                 block page-name
