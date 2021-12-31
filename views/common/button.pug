@@ -1,6 +1,7 @@
-mixin button(href)
+mixin button(href, target)
+    //- Slight HACK to fix blog links now that everything is buttons
     div(class="group bg-gradient-to-bl from-purple-700 to-purple-900 shadow-xl m-4 mb-1 z-0 w-24 h-10 rounded-lg")
-        a(href=href class="text-purple-200 font-size-2")
+        a(href=href class="text-purple-200 font-size-2", target=target)
             div(class="transition-opacity opacity-0 group-hover:opacity-100 bg-gradient-to-bl from-orange-500 to-purple-900 via-purple-500 absolute z-10 w-24 h-10 rounded-lg")
             div(class="p-2 z-20 relative text-center")
                 block

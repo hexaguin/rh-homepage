@@ -23,7 +23,7 @@ mixin project-buttons(buttons)
     div(class="flex justify-center flex-wrap")
         if buttons
             each button in buttons
-                +button(button.href)
+                +button(button.href, "_blank")
                     i(class=button.icon)
                     span
                         ="  " + button.name
