@@ -3,13 +3,8 @@ include ../card-project
 +card-project("Omnimap", "/res/thumb_omnimap.png", "https://python.raelynn.hattie.codes/omnimap")
     p A unified, mobile-friendly, lightweight map of Calgary's road conditions, Plus 15 network, events, and more.
     .grow
-    +project-buttons()
-        +button("https://python.raelynn.hattie.codes/omnimap")
-            i(class="fas fa-map")
-            span  Link
-        +button("https://raelynn.hattie.codes/blog/2019/03/22/omnimap-the-unified-map-for-calgarians-on-the-go/")
-            i(class="fas fa-newspaper")
-            span  Article
-        +button("https://github.com/hexaguin/calgary-omnimap")
-            i(class="fab fa-github")
-            span  Github
+    +project-buttons([
+        {"name":"Link", "icon":"fas fa-map", "href":"https://python.raelynn.hattie.codes/omnimap"},
+        {"name":"Article", "icon":"fas fa-newspaper", "href":"https://raelynn.hattie.codes/blog/2019/03/22/omnimap-the-unified-map-for-calgarians-on-the-go/"},
+        {"name":"Github", "icon":"fab fa-github", "href":"https://github.com/hexaguin/calgary-omnimap"}
+    ])

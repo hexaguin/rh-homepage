@@ -3,10 +3,7 @@ include ../card-project
 +card-project("DSO203 Converter", "/res/thumb_dso.png", "https://python.raelynn.hattie.codes/dso-csv")
     p A simple online tool for converting the slightly wonky CSV files from the DSO203 oscilloscope for use in sigroc.
     .grow
-    +project-buttons()
-        +button("https://python.raelynn.hattie.codes/dso-csvg")
-            i(class="fas fa-external-link-alt")
-            span  Link
-        +button("https://raelynn.hattie.codes/blog/2019/02/20/converting-buffer-dumps-from-the-dso203-for-use-in-sigrok-pulseview/")
-            i(class="fas fa-newspaper")
-            span  Article
+    +project-buttons([
+        {"name":"Link", "icon":"fas fa-external-link-alt", "href":"https://python.raelynn.hattie.codes/dso-csv"},
+        {"name":"Article", "icon":"fas fa-newspaper", "href":"https://raelynn.hattie.codes/blog/2019/02/20/converting-buffer-dumps-from-the-dso203-for-use-in-sigrok-pulseview/"}
+    ])

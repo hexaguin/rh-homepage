@@ -16,7 +16,14 @@ mixin card-project(name, imgsrc, imglink)
                 =name
             block
 
-//- Div to contain buttons inside a project card
-mixin project-buttons()
+//- Mixin to generate inside a project card.
+//- Attributes:
+//-  buttons: an array of objects, each with a `name` (text inside the button), `href` (link URL), and `icon` (Font Awesome class)
+mixin project-buttons(buttons)
     div(class="flex justify-center flex-wrap")
-        block
+        if buttons
+            each button in buttons
+                +button(button.href)
+                    i(class=button.icon)
+                    span
+                        ="  " + button.name

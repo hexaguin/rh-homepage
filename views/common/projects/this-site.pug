@@ -9,10 +9,7 @@ include ../styled-links
         +link-inline("https://tailwindcss.com/", "Tailwind")
         |. For more information, see the full blog post.
     .grow
-    +project-buttons()
-        +button("https://raelynn.hattie.codes/blog")
-            i(class="fas fa-newspaper")
-            span  Article
-        +button("https://github.com/hexaguin/rh-homepage/")
-            i(class="fab fa-github")
-            span  Github
+    +project-buttons([
+        {"name":"Article", "icon":"fas fa-newspaper", "href":"https://raelynn.hattie.codes/blog"},
+        {"name":"Github", "icon":"fab fa-github", "href":"https://github.com/hexaguin/rh-homepage/"}
+    ])
